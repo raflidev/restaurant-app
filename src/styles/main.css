@@ -1,0 +1,39 @@
+img {
+    display: block;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:white
+}
+
+.wrapper-image{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.navbar{
+    background-color: #02475e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+.navbar .menu{
+    padding: 10px;
+    color:white
+}
+
+.navbar-brand{
+    font-weight: bold;
+}
+
+.main-content{
+    background-color: #687980;
+}
+
+/* .hero-element{
+    height: 100px;
+    background-image: url("../../src/public/images/heros/hero-image_1.jpg");
+} */
