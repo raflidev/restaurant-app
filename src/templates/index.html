@@ -6,24 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<a class="skip-content" tabindex="1" href="#wrapper">Ke Konten Utama</a>
 <div class="navbar">
-    <div class="navbar-brand">Restoranku</div>
-    <div>
-        <a class="menu" href="/">Home</a>
-        <a class="menu" href="#">Favourite</a>
-        <a class="menu" target="blank" href="https://instagram.com/raflidev">About us</a>
+    <div class="navbar-brand" tabindex="2">Restoranku</div>
+    <button tabindex="3" class="burger-menu">
+        <i class="fa fa-bars"></i>
+    </button>
+    <div class="menu">
+        <a tabindex="3" href="/">Home</a>
+        <a tabindex="4" href="#">Favourite</a>
+        <a tabindex="5" target="blank" href="https://instagram.com/raflidev">About us</a>
     </div>
 </div>
 <div class="main-content">
     <div class="hero-element">
-        Restoran oh Restoran
+        <h1 class="judul">Tempat makannya anak gaul</h1>
+        <p class="deskripsi">Nyaman, Enak, Instagramable adalah andalan kami</p>
     </div>
-    <div class="wrapper-image">
-        <img src="./images/heros/hero-image_1.jpg" width="450" alt="">
-        <img src="./images/heros/hero-image_2.jpg" width="450" alt="">
-        <img src="./images/heros/hero-image_3.jpg" width="450" alt="">
-        <img src="./images/heros/hero-image_4.jpg" width="450" alt="">
+    <h3 class="judul" tabindex="6">Explore Restoran</h3>
+    <div id="wrapper" class="wrapper-image">
     </div>
+</div>
+<div class="footer">
+    Copyright © 2021 - Restoranku
 </div>
 </body>
 </html>
