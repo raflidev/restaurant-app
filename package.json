@@ -16,7 +16,9 @@
     "eslint": "^7.25.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^6.0.0",
     "style-loader": "^2.0.0",
     "webpack": "4.x.x",
     "webpack-cli": "3.x.x",
@@ -26,6 +28,7 @@
   "dependencies": {
     "idb": "^6.0.0",
     "regenerator-runtime": "^0.13.7",
-    "serviceworker-webpack-plugin": "^1.0.1"
+    "serviceworker-webpack-plugin": "^1.0.1",
+    "@fortawesome/fontawesome-free": "^5.15.3"
   }
 }

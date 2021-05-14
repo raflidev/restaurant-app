@@ -1,0 +1,141 @@
+img {
+    display: block;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:white;
+    margin:0
+}
+
+.wrapper-image{
+    display: grid;
+    justify-content: center;
+    grid-gap: 1em;
+    margin: 0 20px;
+    grid-template-columns: auto auto auto;
+}
+
+.navbar{
+    background-color: #02475e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+}
+.navbar .menu a{
+    padding: 10px;
+    color:white;
+    display: inline-block;
+    height:25px
+}
+
+.navbar-brand{
+    font-weight: bold;
+}
+
+.main-content{
+    background-color: #687980;
+    padding-bottom: 40px;
+}
+
+.hero-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 26em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2em;
+    background-position: center;
+    background-image: url("../public/images/heros/hero-image_4.jpg");
+}
+
+.hero-element .judul, .hero-element .deskripsi{
+    margin:10px 0;
+    text-shadow: 2px 2px 10px #000;
+    text-align: center;
+}
+
+.main-content .judul{
+    text-align: center;
+}
+h3.judul {
+    font-size:28px;
+    margin:2em 0;
+}
+
+.main-content .card{
+    background-color: white;
+    padding:0 0 2em 0;
+    border-radius: 6px;
+    color: black;
+    max-width: 450px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 6px;
+    max-width: 450px;
+    height: 300px;
+}
+.card .card-content {
+    padding: 0 25px;
+}
+.card div h4{
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+.fa-star{
+    color:gray
+}
+.full{
+    color: #fdca40;
+}
+
+.footer{
+    background-color: #02475e;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+div .rating-kota{
+    display: flex;
+    justify-content:space-between;
+    margin: 15px 0;
+}
+.fa-map-marker-alt{
+    color: #bd2000;
+}
+.skip-content{
+    position: absolute;
+    top:-50px;
+    left:0;
+    background-color: #687980;
+    color: white;
+    padding: 12px;
+    z-index: 100;
+}
+
+.skip-content:focus{
+    top:0;
+}
+
+.burger-menu{
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+}
+
+.burger-menu .fa-bars{
+    width: 45px;
+    height:45px;
+    color: white;
+}
+.mobile-menu {
+    top: 100px !important;
+}

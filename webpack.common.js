@@ -21,6 +21,12 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+        ],
+      },
     ],
   },
   plugins: [
@@ -33,6 +39,7 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src/public/'),
           to: path.resolve(__dirname, 'dist/'),
+          noErrorOnMissing: true,
         },
       ],
     }),
