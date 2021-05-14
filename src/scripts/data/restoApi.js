@@ -2,14 +2,15 @@ import apiEndpoint from '../globals/api-endpoint';
 
 class restoApi {
   static async restoApiList() {
-    const res = await apiEndpoint.LIST;
-    const resJson = res.json();
-    return resJson.result;
+    const res = await fetch(apiEndpoint.LIST);
+    const resJson = await res.json();
+    return resJson.restaurants;
   }
 
   static async restoApiDetail(id) {
-    const res = await apiEndpoint.DETAIL(id);
-    return res.json();
+    const res = await fetch(apiEndpoint.DETAIL(id));
+    const resJson = await res.json();
+    return resJson.restaurants;
   }
 }
 

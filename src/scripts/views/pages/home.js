@@ -1,3 +1,6 @@
+import restoApi from '../../data/restoApi';
+import { createListRestaurant } from '../templates/template-creator';
+
 const Home = {
   async render() {
     return `
@@ -7,12 +10,19 @@ const Home = {
     </div>
       <h3 class="judul" tabindex="6">Explore Restoran</h3>
       <div id="wrapper" class="wrapper-image">
+      </div>
     </div>
     `;
   },
 
   async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
+    const list = await restoApi.restoApiList();
+    let tab = 7;
+    const wrapper = document.querySelector('#wrapper');
+    list.forEach((data, index) => {
+      wrapper.innerHTML += createListRestaurant(data, index, tab);
+      tab += 1;
+    });
   },
 };
 
