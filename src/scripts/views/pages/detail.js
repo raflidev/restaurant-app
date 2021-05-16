@@ -6,11 +6,13 @@ import {
   createFoodSectionDetailRestaurant,
   createCustomerDetailRestaurant,
 } from '../templates/template-creator';
+import likeButtonInitiator from '../../utils/like-button-initiator';
 
 const Detail = {
   async render() {
     return `
     <div class="resto"></div>
+    <div id="likeButtonContainer"></div>
     `;
   },
 
@@ -38,6 +40,11 @@ const Detail = {
     const customer = document.querySelector('.wrapper-customer-review');
     detail.customerReviews.forEach((data) => {
       customer.innerHTML += createCustomerDetailRestaurant(data);
+    });
+
+    likeButtonInitiator.init({
+      likeButtonContainer: document.querySelector('#likeButtonContainer'),
+      resto: detail,
     });
   },
 };
