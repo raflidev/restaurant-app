@@ -10,7 +10,7 @@ class restoApi {
   static async restoApiDetail(id) {
     const res = await fetch(apiEndpoint.DETAIL(id));
     const resJson = await res.json();
-    return resJson.restaurants;
+    return resJson.restaurant;
   }
 }
 

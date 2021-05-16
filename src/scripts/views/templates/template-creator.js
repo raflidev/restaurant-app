@@ -23,7 +23,9 @@ const createListRestaurant = (resto, index, tab) => `
     <div class="card" tabindex="${tab + index}">
         <img src="${config.imageEndpoint}/${resto.pictureId}" alt="${resto.name}">
         <div class="card-content">
-            <h4>${resto.name}</h4>
+            <h4>
+            <a href="/#/detail/${resto.id}">${resto.name}</a>
+            </h4>
             <div class="rating-kota">
                 <span>${resto.rating} ${createRatingRestaurant(resto.rating)} </span>
                 <span>
@@ -37,4 +39,69 @@ const createListRestaurant = (resto, index, tab) => `
 
 `;
 
-export { createListRestaurant, createRatingRestaurant };
+const createCategoriesDetailRestaurant = (name) => `
+  <div class="categories-menu">
+    ${name}
+  </div>
+`;
+
+const createFoodSectionDetailRestaurant = (name) => `
+  <div class="foodsection-menu">
+    ${name}
+  </div>
+`;
+
+const createDetailRestaurant = (resto) => `
+  <div class="detail-content">
+    <div class="detail-page">
+      <div class="image">
+        <img src="${config.imageEndpoint}/${resto.pictureId}" alt="${resto.name}">
+      </div>
+      <div class="resto-detail">
+        <h2>${resto.name}</h2>
+        <span>${resto.rating} ${createRatingRestaurant(resto.rating)} </span>
+        <p><i class="fa fa-map-marker-alt"></i>  ${resto.address} - ${resto.city}</p>  
+        <p>${resto.description}</p>
+
+
+        <div class="category">
+          <span>Kategori : </span>
+          <div class="menu-resto">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-page">
+      <h3>Daftar Makanan</h3>
+      <div class="food-section">
+      </div>
+
+      <h3>Daftar Minuman</h3>
+      <div class="drink-section">
+      </div>
+    </div>
+
+    <div class="review-page">
+      <h3>Apa kata mereka?</h3>
+      <div class="wrapper-customer-review"></div>
+    </div>
+  </div>
+`;
+
+const createCustomerDetailRestaurant = (customer) => `
+  <div class="customer-review">
+    ${customer.name}
+    <div>${customer.review}</div>
+    ${customer.date}
+  </div>
+`;
+
+export {
+  createListRestaurant,
+  createRatingRestaurant,
+  createDetailRestaurant,
+  createCategoriesDetailRestaurant,
+  createFoodSectionDetailRestaurant,
+  createCustomerDetailRestaurant,
+};

@@ -38,6 +38,7 @@ body{
 .main-content{
     background-color: #687980;
     padding-bottom: 40px;
+    min-height: 768px;
 }
 
 .hero-element{
@@ -138,4 +139,95 @@ div .rating-kota{
 }
 .mobile-menu {
     top: 100px !important;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content a {
+    color:black;
+}
+
+a:hover{
+    color: #687980;
+}
+
+.detail-page, .food-section, .drink-section{
+    display: flex;
+}
+.detail-content {
+    padding: 1em 1em;
+}
+
+.food-section, .drink-section {
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.detail-page .image img{
+    width: 100%;
+    border-radius: 6px;
+    margin-right: 1em;
+    max-width: 600px;
+    height: 500px;
+}
+
+.resto-detail {
+    width: 50%;
+}
+
+.menu-resto {
+    display:flex;
+}
+
+.categories-menu, .foodsection-menu {
+    background-color: white;
+    color:black;
+    border-radius: 5px;
+}
+
+.categories-menu {
+    padding: 5px 10px;
+    margin-right: 6px;
+}
+
+.foodsection-menu {
+    padding: 1em 2em;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+}
+
+.category span {
+    margin-right:5px;
+}
+.menu-page h3, .review-page h3 {
+    text-align: center;
+}
+
+.detail-page, .food-section, .drink-section {
+    margin-bottom:2em;
+}
+
+.wrapper-customer-review {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* width: 500px;
+    flex-direction: column;
+    margin: 0 auto; */
+    gap: 1em;
+}
+
+.customer-review {
+    background-color: white;
+    width: 420px;
+    color: black;
+    padding: 1em;
+    border-radius: 8px;
 }
