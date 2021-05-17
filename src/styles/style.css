@@ -9,7 +9,7 @@ body{
     margin:0
 }
 
-.wrapper-image{
+.wrapper-image, .container-favourite{
     display: grid;
     justify-content: center;
     grid-gap: 1em;
@@ -39,6 +39,7 @@ body{
     background-color: #687980;
     padding-bottom: 40px;
     min-height: 768px;
+    padding: 1em 2em;       
 }
 
 .hero-element{
@@ -63,6 +64,7 @@ body{
 .main-content .judul{
     text-align: center;
 }
+
 h3.judul {
     font-size:28px;
     margin:2em 0;

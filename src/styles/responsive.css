@@ -15,7 +15,7 @@
         border: 3px solid BLACK;
         padding: 1em 4em;
     }
-    .wrapper-image{
+    .wrapper-image, .container-favourite{
         grid-template-columns: auto;
     }
     div .rating-kota{
@@ -30,7 +30,7 @@
     .burger-menu{
         display: none;
     }
-    .wrapper-image{
+    .wrapper-image, .container-favourite{
         margin: 0 1em;
         grid-template-columns: auto auto;
     }
