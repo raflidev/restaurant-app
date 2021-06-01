@@ -12,6 +12,12 @@ class restoApi {
     const resJson = await res.json();
     return resJson.restaurant;
   }
+
+  static async restoApiSearch(name) {
+    const res = await fetch(apiEndpoint.SEARCH(name));
+    const resJson = await res.json();
+    return resJson.restaurants;
+  }
 }
 
 export default restoApi;

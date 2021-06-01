@@ -9,6 +9,7 @@ const routes = {
   '/about-us': Aboutus,
   '/detail/:id': Detail,
   '/favourite': Favourite,
+  '/search': Search,
   '/search/:id': Search,
 };
 

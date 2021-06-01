@@ -7,7 +7,7 @@ const Favourite = {
     <h1 style='padding:20px;margin:0;text-align:center'>
       Favourite Restaurantmu
     </h1>
-    <div class="container-favourite">
+    <div class="container">
     </div>
     `;
   },
@@ -15,7 +15,7 @@ const Favourite = {
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
     const resto = await favouriteResto.getAllResto();
-    const container = document.querySelector('.container-favourite');
+    const container = document.querySelector('.container');
     resto.forEach((data) => {
       container.innerHTML += createListRestaurant(data);
     });
