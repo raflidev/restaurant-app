@@ -17,6 +17,7 @@
         "no-console":"off",
         "no-underscore-dangle":"off",
         "max-len":"off",
-        "no-restricted-globals":"off"
+        "no-restricted-globals":"off",
+        "quote-props":"off"
     }
 }

@@ -18,6 +18,23 @@ class restoApi {
     const resJson = await res.json();
     return resJson.restaurants;
   }
+
+  static async restoApiReview(data) {
+    const rawResponse = await fetch(apiEndpoint.REVIEW, {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        id: data.id,
+        name: data.name,
+        review: data.review,
+      }),
+    });
+    const content = await rawResponse.json();
+    return content;
+  }
 }
 
 export default restoApi;

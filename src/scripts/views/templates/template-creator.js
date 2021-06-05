@@ -86,6 +86,21 @@ const createDetailRestaurant = (resto) => `
       <h3>Apa kata mereka?</h3>
       <div class="wrapper-customer-review"></div>
     </div>
+    
+    <div class="post-review">
+      <h3>Ingin memberikan feedback kepada restoran ini?</h3>
+      <form>
+        <div>
+          <label>Name</label>
+          <input type="text" id="review-name" name="name" placeholder="Nama" />
+        </div>
+        <div>
+          <label>Review</label>
+          <textarea name="review" id="review-text" row=3 col=2 placeholder="Review"></textarea>
+        </div>
+        <button id="review-submit" type="submit">Kirim Feedback</button>
+      </form>
+    </div>
   </div>
 `;
 

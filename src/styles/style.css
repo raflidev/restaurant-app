@@ -274,3 +274,7 @@ form #buttonCari {
     justify-content: center;
     margin-bottom: 30px;
 }
+
+.post-review h3{
+    text-align: center;
+}

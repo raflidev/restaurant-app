@@ -46,6 +46,20 @@ const Detail = {
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
       resto: detail,
     });
+    const reviewSubmit = document.querySelector('#review-submit');
+    reviewSubmit.addEventListener('click', (e) => {
+      e.preventDefault();
+      let reviewName = document.querySelector('#review-name').value;
+      let reviewText = document.querySelector('#review-text').value;
+      const data = {
+        id: url.id,
+        name: reviewName,
+        review: reviewText,
+      };
+      restoApi.restoApiReview(data);
+      reviewName = '';
+      reviewText = '';
+    });
   },
 };
 
