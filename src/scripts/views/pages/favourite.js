@@ -16,6 +16,9 @@ const Favourite = {
     // Fungsi ini akan dipanggil setelah render()
     const resto = await favouriteResto.getAllResto();
     const container = document.querySelector('.container');
+    if (resto.length === 0) {
+      container.innerHTML = '<p style="text-align:center;font-style:italic;">anda belum punya restaurant favorit.</p>';
+    }
     resto.forEach((data) => {
       container.innerHTML += createListRestaurant(data);
     });

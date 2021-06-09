@@ -89,7 +89,7 @@ const createDetailRestaurant = (resto) => `
     
     <div class="post-review">
       <h3>Ingin memberikan feedback kepada restoran ini?</h3>
-      <form>
+      <form id="form-review">
         <div>
           <label>Name</label>
           <input type="text" id="review-name" name="name" placeholder="Nama" />

@@ -24,6 +24,19 @@
     .card img {
         height:auto
     }
+    .wrapper-image, .container {
+        grid-template-columns: auto;
+    }
+
+    .detail-page {
+        flex-wrap: wrap;
+    }
+    .detail-page .image img {
+        height: 100%;
+    }
+    .resto-detail {
+        width: auto;
+    }
   }
   /* tablet */
 @media (min-width:913px) and (max-width: 1298px) {
@@ -32,6 +45,12 @@
     }
     .wrapper-image, .container-favourite{
         margin: 0 1em;
+        grid-template-columns: auto auto;
+    }
+    .resto-detail {
+        margin-left: 30px;
+    }
+    .wrapper-image, .container {
         grid-template-columns: auto auto;
     }
   }

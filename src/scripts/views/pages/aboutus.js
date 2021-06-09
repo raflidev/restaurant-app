@@ -1,12 +1,18 @@
 const Aboutus = {
   async render() {
     return `
-    <h1>page Aboutus</h1>
+    <div>
+      <div class="card">
+        <div class="card_image"></div>
+        <div class="card_description">
+          <span>Muhammad Rafli Ramadhan</span>
+          <p>Frontend Web Developer</p>
+        </div>
+        <div class="card_link">
+        </div>
+      </div>
+    </div>
     `;
-  },
-
-  async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
   },
 };
 
