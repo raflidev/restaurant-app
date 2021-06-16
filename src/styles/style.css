@@ -98,14 +98,6 @@ h3.judul {
     color: #fdca40;
 }
 
-.footer{
-    background-color: #02475e;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 0.5em 0;
-}
-
 div .rating-kota{
     display: flex;
     justify-content:space-between;
@@ -320,4 +312,61 @@ form #buttonCari {
 #form-review div input, #form-review div textarea {
     border-radius: 8px;
     border-style: none;
+}
+
+/* about us */
+.about_us_page {
+    display: flex;
+    justify-content: center;
+}
+.card_about {
+    background-color: #02475e;
+    color: white;
+    width: 300px;
+    height: 400px;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.card_about_image {
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.card_about_description {
+    text-align: center;
+}
+
+.card_about_link {
+    display: flex;
+    justify-content: center;
+}
+
+.width_svg {
+    width: 50px!important;
+    color: white;
+}
+
+.footer{
+    background-color: #02475e;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0.5em 1em;
+}
+
+.footer_brand {
+    text-align: left;
+}
+.footer_brand h2 {
+    margin-bottom: 0;
+}
+
+.footer_brand p {
+    margin-top:0;
+    font-size: 19px;
+}
+
+.footer_side {
+    align-self: flex-end;
 }

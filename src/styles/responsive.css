@@ -37,6 +37,9 @@
     .resto-detail {
         width: auto;
     }
+    .footer {
+        display: block;
+    }
   }
   /* tablet */
 @media (min-width:913px) and (max-width: 1298px) {
