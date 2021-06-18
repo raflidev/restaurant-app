@@ -39,7 +39,6 @@ body{
     background-color: #687980;
     padding-bottom: 40px;
     min-height: 768px;
-    padding: 1em 2em;       
 }
 
 .hero-element{
@@ -90,6 +89,9 @@ h3.judul {
 .card div h4{
     margin-bottom: 0px;
     font-size: 24px;
+}
+.card div h4 a{
+    padding: 12px 0;
 }
 .fa-star{
     color:gray
