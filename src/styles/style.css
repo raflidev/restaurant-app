@@ -17,22 +17,23 @@ body{
     grid-template-columns: auto auto auto;
 }
 
-.navbar{
+nav{
     background-color: #02475e;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5em;
 }
-.navbar .menu a{
+nav .menu a{
     padding: 10px;
     color:white;
     display: inline-block;
     height:25px
 }
 
-.navbar-brand{
+.navbar-brand a{
     font-weight: bold;
+    padding: 14px 0;   
 }
 
 .main-content{
@@ -64,9 +65,11 @@ body{
     text-align: center;
 }
 
-h3.judul {
+p.judul {
+    margin-top: -10px;
+    font-weight: bold;
     font-size:28px;
-    margin:2em 0;
+    padding: 20px 0;
 }
 
 .main-content .card{
@@ -257,12 +260,12 @@ form#search_form {
 }
 form #cariResto {
     width: 500px;
-    padding: 0.6em;
+    padding: 0.9em;
 }
 
 form #buttonCari {
     width: 100px;
-    height: 40px;
+    height: 48px;
     background-color: #02475e;
     color:white;
     font-weight: 600;
@@ -283,7 +286,6 @@ form #buttonCari {
 }
 
 #form-review {
-    /* margin: 0 auto; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;

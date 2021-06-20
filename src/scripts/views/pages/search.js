@@ -5,7 +5,7 @@ const Search = {
   async render() {
     return `
     <div class="search">
-      <h3 class="judul">Cari Restoranmu</h3>
+      <p class="judul">Cari Restoranmu</p>
       <form id="search_form">
         <input id="cariResto" type="text" placeholder="Warung Steak ..">
         <button id="buttonCari">Submit</button>

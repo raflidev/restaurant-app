@@ -10,7 +10,7 @@
         background-color: white;
         z-index: 100;
     }
-    .navbar .menu a{
+    nav .menu a{
         color:black;
         border: 3px solid BLACK;
         padding: 1em 4em;
