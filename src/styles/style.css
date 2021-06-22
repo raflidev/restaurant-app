@@ -305,6 +305,7 @@ form #buttonCari {
     width: 30em;
     padding: 1em 8px;
 }
+
 #form-review button {
     width: 20em;
     padding: 1em;
@@ -316,6 +317,7 @@ form #buttonCari {
 #form-review div input, #form-review div textarea {
     border-radius: 8px;
     border-style: none;
+    padding: 17px 10px;
 }
 
 /* about us */
@@ -325,6 +327,7 @@ form #buttonCari {
 }
 .card_about {
     background-color: #02475e;
+    margin-top: 10%;
     color: white;
     width: 300px;
     height: 400px;
@@ -345,13 +348,15 @@ form #buttonCari {
     display: flex;
     justify-content: center;
 }
-
+.card_about_link a {
+    padding: 20px 5px;
+}
 .width_svg {
     width: 50px!important;
     color: white;
 }
 
-.footer{
+footer{
     background-color: #02475e;
     display: flex;
     justify-content: space-between;
