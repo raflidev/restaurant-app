@@ -12,6 +12,10 @@ const dbPromise = openDB(dbName, dbVersion, {
 const favouriteResto = {
 
   async getResto(id) {
+    if (!id) {
+      return;
+    }
+
     return (await dbPromise).get(dbStoreName, id);
   },
 
@@ -20,6 +24,10 @@ const favouriteResto = {
   },
 
   async putResto(resto) {
+    if (!resto.hasOwnProperty('id')) {
+      return;
+    }
+
     return (await dbPromise).put(dbStoreName, resto);
   },
 

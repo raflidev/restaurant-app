@@ -2,7 +2,8 @@
     "env": {
         "browser": true,
         "es2021": true,
-        "node": true
+        "node": true,
+        "jasmine": true
     },
     "extends": [
         "airbnb-base"
@@ -18,6 +19,9 @@
         "no-underscore-dangle":"off",
         "max-len":"off",
         "no-restricted-globals":"off",
-        "quote-props":"off"
+        "quote-props":"off",
+        "consistent-return": 0,
+        "no-prototype-builtins": 0,
+        "import/prefer-default-export": 0
     }
 }

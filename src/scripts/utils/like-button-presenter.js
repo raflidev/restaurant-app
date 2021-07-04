@@ -5,6 +5,7 @@ const likeButtonInitiator = {
   async init({ likeButtonContainer, resto }) {
     this._likeButtonContainer = likeButtonContainer;
     this._resto = resto;
+
     await this._renderButton();
   },
 
@@ -42,7 +43,6 @@ const likeButtonInitiator = {
       this._renderButton();
     });
   },
-
 };
 
 export default likeButtonInitiator;
