@@ -7,6 +7,7 @@ import {
   createCustomerDetailRestaurant,
 } from '../templates/template-creator';
 import likeButtonPresenter from '../../utils/like-button-presenter';
+import favouriteResto from '../../data/favourite-resto';
 
 const Detail = {
   async render() {
@@ -44,6 +45,7 @@ const Detail = {
 
     likeButtonPresenter.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
+      favouriteResto,
       resto: detail,
     });
     const reviewSubmit = document.querySelector('#review-submit');
