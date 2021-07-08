@@ -4,11 +4,6 @@ import '../styles/responsive.css';
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
-import '@fortawesome/fontawesome-free/js/brands';
-import '@fortawesome/fontawesome-free/js/solid';
-import '@fortawesome/fontawesome-free/js/regular';
-import '@fortawesome/fontawesome-free/js/fontawesome';
-
 import App from './views/app';
 import swRegister from './utils/sw-register';
 
