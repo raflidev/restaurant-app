@@ -42,15 +42,18 @@ nav .menu a{
     min-height: 768px;
 }
 
-.hero-element{
+.hero-element, #hero{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 26em;
+    margin-bottom: 2em;
+    background-color: #8aa1ab;
+}
+.hero-element {
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 2em;
     background-position: center;
     background-image: url("../public/images/heros/hero-image_4.jpg");
 }

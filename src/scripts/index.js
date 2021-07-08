@@ -1,6 +1,8 @@
 import 'regenerator-runtime';
 import '../styles/style.css';
 import '../styles/responsive.css';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 import '@fortawesome/fontawesome-free/js/brands';
 import '@fortawesome/fontawesome-free/js/solid';
@@ -20,7 +22,7 @@ window.addEventListener('hashchange', () => {
   app.renderPage();
 });
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
   app.renderPage();
   swRegister();
 });

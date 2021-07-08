@@ -7,7 +7,7 @@ const Favourite = {
     <h1 style='padding:20px;margin:0;text-align:center'>
       Favourite Restaurantmu
     </h1>
-    <div class="container">
+    <div id="query" class="container">
     </div>
     `;
   },
@@ -17,7 +17,7 @@ const Favourite = {
     const resto = await favouriteResto.getAllResto();
     const container = document.querySelector('.container');
     if (resto.length === 0) {
-      container.innerHTML = '<p style="text-align:center;font-style:italic;">anda belum punya restaurant favorit.</p>';
+      container.innerHTML = '<p id="favourite_empty" style="text-align:center;font-style:italic;">anda belum punya restaurant favorit.</p>';
     }
     resto.forEach((data) => {
       container.innerHTML += createListRestaurant(data);
