@@ -18,11 +18,11 @@ body{
 }
 
 nav{
-    background-color: #02475e;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5em;
+    width: 1666px;
 }
 nav .menu a{
     padding: 10px;
@@ -49,13 +49,13 @@ nav .menu a{
     align-items: center;
     height: 26em;
     margin-bottom: 2em;
-    background-color: #8aa1ab;
+    background-color: #02475e;
 }
 .hero-element {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    background-image: url("../public/images/heros/hero-image_4.jpg");
+    background-position: center;    
+    background-image: url("../public/images/heros/hero-image_4-small.jpg");
 }
 
 .hero-element .judul, .hero-element .deskripsi{
@@ -381,4 +381,10 @@ footer{
 
 .footer_side {
     align-self: flex-end;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #02475e;
 }

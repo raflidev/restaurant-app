@@ -1,11 +1,11 @@
 const assert = require('assert');
 
 Feature('Liking Movies');
- 
+
 Before(({ I }) => {
   I.amOnPage('/#/favourite');
 });
- 
+
 Scenario('showing empty favourite restaurant', ({ I }) => {
   I.seeElement('#query');
   I.see('anda belum punya restaurant favorit.', '#favourite_empty');
@@ -32,10 +32,9 @@ Scenario('liking one restaurant', async ({ I }) => {
   assert.strictEqual(firstRestoTitle, likedRestoTitle);
 });
 
-
 Scenario('unlike one restaurant', async ({ I }) => {
   I.amOnPage('/');
-  
+
   const firstResto = locate('#resto_title').first();
   const firstRestoTitle = await I.grabTextFrom(firstResto);
   I.click(firstResto);

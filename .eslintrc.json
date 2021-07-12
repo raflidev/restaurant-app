@@ -4,10 +4,13 @@
         "es2021": true,
         "node": true,
         "jasmine": true,
-        "e2e": true,
+        "codeceptjs/codeceptjs": true
     },
     "extends": [
         "airbnb-base"
+    ],
+    "plugins": [
+        "codeceptjs"
     ],
     "parserOptions": {
         "ecmaVersion": 12,
@@ -25,6 +28,7 @@
         "no-prototype-builtins": 0,
         "import/prefer-default-export": 0,
         "no-return-assign": 0,
-        "no-undef": 0
+        "no-undef": 0,
+        "func-names": 0
     }
 }

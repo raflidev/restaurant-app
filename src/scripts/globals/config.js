@@ -1,6 +1,6 @@
 const CONFIG = {
   webApi: 'https://restaurant-api.dicoding.dev',
-  imageEndpoint: 'https://restaurant-api.dicoding.dev/images/medium',
+  imageEndpoint: 'https://restaurant-api.dicoding.dev/images/small',
   cacheName: new Date().toISOString(),
   dbName: 'restaurant-app-db',
   dbVersion: 1,

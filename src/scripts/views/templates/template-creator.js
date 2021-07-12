@@ -21,7 +21,7 @@ const createRatingRestaurant = (rating) => {
 const createListRestaurant = (resto, index, tab) => `
 <div>
   <div id="fav_resto" class="card" tabindex="${tab + index}">
-    <img class="lazyload" data-src="${config.imageEndpoint}/${resto.pictureId}" alt="${resto.name}">
+  <img class="lazyload" data-src="${config.imageEndpoint}/${resto.pictureId}" alt="${resto.name}">
     <div class="card-content">
       <h4>
         <a id="resto_title" href="/#/detail/${resto.id}">${resto.name}</a>
@@ -130,7 +130,7 @@ const createSkeletonMovieTemplate = (count) => {
   for (let i = 0; i < count; i += 1) {
     template += `
       <div class="card">
-      <img class="movie-item__header__poster" width="431px" height="350px" src="./images/placeholder.png" alt="skeleton">
+      <img class="movie-item__header__poster" width="431px" height="350px" src="../public/images/placeholder.png" alt="skeleton">
       <div class="card-content">
         <h3>Lorem ipsum dolor sit.</a></h3>
         <div class="rating-kota">

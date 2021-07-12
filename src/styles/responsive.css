@@ -1,5 +1,8 @@
 /* mobile */
 @media only screen and (max-width: 913px) {
+    .her-element {
+        background-image: url("../public/images/heros/hero-image_4-large.jpg");
+    }
     .menu{
         position: absolute;
         top: -500px;
