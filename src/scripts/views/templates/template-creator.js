@@ -29,7 +29,7 @@ const createListRestaurant = (resto, index, tab) => `
       <div class="rating-kota">
         <span>${resto.rating} ${createRatingRestaurant(resto.rating)} </span>
         <span>
-        <i class="fa fa-map-marker-alt"></i>
+        <i class="fa fa-map-marker"></i>
         ${resto.city}</span>
       </div>
       <p>${resto.description.substr(0, 107)}...</p>
@@ -60,7 +60,7 @@ const createDetailRestaurant = (resto) => `
       <div class="resto-detail">
         <h2 tabindex="8">${resto.name}</h2>
         <span>${resto.rating} ${createRatingRestaurant(resto.rating)} </span>
-        <p><i class="fa fa-map-marker-alt"></i>  ${resto.address} - ${resto.city}</p>  
+        <p><i class="fa fa-map-marker"></i>  ${resto.address} - ${resto.city}</p>  
         <p tabindex="9">${resto.description}</p>
 
 
@@ -114,13 +114,13 @@ const createCustomerDetailRestaurant = (customer) => `
 
 const createLikeButtonTemplate = () => `
   <button aria-label="like this resto" id="likeButton" class="like">
-     <i class="far fa-heart" aria-hidden="true"></i>
+     <i class="fa fa-heart" aria-hidden="true"></i>
   </button>
 `;
 
 const createLikedButtonTemplate = () => `
   <button aria-label="unlike this resto" id="likeButton" class="like">
-    <i class="fas fa-heart" aria-hidden="true"></i>
+    <i class="fa fa-heart" aria-hidden="true"></i>
   </button>
 `;
 
@@ -130,13 +130,13 @@ const createSkeletonMovieTemplate = (count) => {
   for (let i = 0; i < count; i += 1) {
     template += `
       <div class="card">
-      <img class="movie-item__header__poster" width="431px" height="350px" src="../public/images/placeholder.png" alt="skeleton">
+      <img class="movie-item__header__poster" width="431px" height="350px" src="../../images/placeholder.png" alt="skeleton">
       <div class="card-content">
         <h3>Lorem ipsum dolor sit.</a></h3>
         <div class="rating-kota">
         <span>0 ${createRatingRestaurant(0)} </span>
         <span>
-        <i class="fa fa-map-marker-alt"></i>
+        <i class="fa fa-map-marker"></i>
         Bekasi</span>
       </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias aspernatur, assumenda</p>

@@ -1,4 +1,5 @@
 import 'regenerator-runtime';
+import '../styles/nav.css';
 import '../styles/style.css';
 import '../styles/responsive.css';
 import 'lazysizes';
@@ -21,5 +22,3 @@ window.addEventListener('DOMContentLoaded', () => {
   app.renderPage();
   swRegister();
 });
-
-console.log('Hello Coders!');

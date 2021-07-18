@@ -17,25 +17,6 @@ body{
     grid-template-columns: auto auto auto;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5em;
-    width: 1666px;
-}
-nav .menu a{
-    padding: 10px;
-    color:white;
-    display: inline-block;
-    height:25px
-}
-
-.navbar-brand a{
-    font-weight: bold;
-    padding: 14px 0;   
-}
-
 .main-content{
     background-color: #687980;
     padding-bottom: 40px;
@@ -55,7 +36,7 @@ nav .menu a{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;    
-    background-image: url("../public/images/heros/hero-image_4-small.jpg");
+    background-image: url("../public/images/heros/hero-image_4-large.jpg");
 }
 
 .hero-element .judul, .hero-element .deskripsi{
@@ -111,7 +92,7 @@ div .rating-kota{
     justify-content:space-between;
     margin: 15px 0;
 }
-.fa-map-marker-alt{
+.fa-map-marker{
     color: #bd2000;
 }
 .skip-content{
@@ -170,7 +151,7 @@ a:hover{
 }
 
 .detail-page .image img{
-    width: 100%;
+    width: 500px;
     border-radius: 6px;
     margin-right: 1em;
     max-width: 600px;
